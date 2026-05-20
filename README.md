@@ -1,2 +1,2 @@
 # customer-churn-retention-analytics
-End-to-end customer churn analytics project using Python, SQL, machine learning, and dashboard-ready business KPIs.
+Analyzing bank customer churn using Python, SQL, and machine learning to understand why customers leave and how businesses can improve retention.
