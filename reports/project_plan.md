@@ -1,85 +1,153 @@
-# Customer Churn & Retention Analytics — Project Plan
+# Customer Churn & Retention Analytics for Banking
 
-## 1. Why I Chose This Project
+![Python](https://img.shields.io/badge/Python-Data%20Analysis-blue)
+![SQL](https://img.shields.io/badge/SQL-Business%20KPIs-orange)
+![Power%20BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![Machine%20Learning](https://img.shields.io/badge/Machine%20Learning-Churn%20Prediction-green)
+![Status](https://img.shields.io/badge/Status-In%20Progress-purple)
 
-Customer churn is one of those business problems where data science can create real value. For a bank, losing customers is not just a number in a dataset. It can mean lost revenue, lower customer lifetime value, and missed opportunities to build long-term customer relationships.
+## Project Overview
 
-I chose this project because I want to understand not only which customers are leaving, but also why they might be leaving. My goal is to approach this like a real data science problem: start with raw data, understand the business context, explore customer behavior, build a prediction model, and translate the results into business recommendations.
+Customer churn is one of the most important business problems in banking and financial services. When a customer leaves a bank, the impact is not limited to one lost account. It can also mean lost revenue, reduced customer lifetime value, and missed opportunities for long-term customer relationships.
 
-## 2. Project Objective
+This project focuses on analyzing bank customer churn using data science, SQL, machine learning, and business intelligence. The goal is to understand which customers are more likely to leave, identify patterns behind churn behavior, and provide actionable business recommendations that can help improve customer retention.
 
-The objective of this project is to analyze bank customer churn and build a data-driven solution that can help identify customers who are more likely to leave the bank.
+This is an end-to-end data science project designed to reflect how real-world analytics and machine learning projects are approached in industry.
 
-This project is not only about building a machine learning model. In industry, a good data science project should connect the data, the business problem, the analysis, the model, and the final decision-making. That is the workflow I want to follow here.
+---
 
-## 3. Business Problem
+## Why I Chose This Project
 
-Banks spend a lot of time and money to acquire customers, so retaining existing customers is very important. If a bank can identify customers who are at risk of leaving, it can take action earlier through better service, targeted offers, personalized communication, or retention campaigns.
+I chose this project because customer churn is a practical and high-value business problem. Many companies, especially banks and fintech organizations, want to know not only which customers are leaving but also why they may be leaving.
 
-The main business question behind this project is:
+My goal is to approach this project like a real data science problem by connecting:
 
-**Can customer profile, account, and behavior data help us understand and predict customer churn?**
+- Business understanding
+- Data validation
+- Exploratory data analysis
+- SQL-based KPI analysis
+- Feature engineering
+- Machine learning
+- Dashboard development
+- Business recommendations
 
-## 4. Dataset Overview
+This project allows me to demonstrate both technical skills and business thinking.
 
-The dataset contains 10,000 bank customer records. Each row represents one customer, and each column gives information about that customer’s profile or banking relationship.
+---
 
-The dataset includes features such as:
+## Project Objective
 
-- Credit score
-- Geography / country
-- Gender
-- Age
-- Tenure
-- Account balance
-- Number of products
-- Credit card ownership
-- Active membership status
-- Estimated salary
-- Churn status
+The objective of this project is to analyze customer churn in a banking dataset and build a data-driven solution that helps identify customers who are more likely to leave the bank.
 
-The target column is `churn`.
+This project is not only about building a machine learning model. In a real industry setting, a good data science project should connect the data, the business problem, the analysis, the model, and the final decision-making process.
 
-- `1` means the customer left the bank
-- `0` means the customer stayed with the bank
+The final goal is to help the business understand customer behavior and support better retention strategies.
 
-Raw dataset location:
+---
+
+## Business Problem
+
+Banks spend a significant amount of time and money acquiring customers. Because of this, retaining existing customers is extremely important.
+
+If a bank can identify customers who are at risk of leaving, it can take action earlier through:
+
+- Better customer service
+- Targeted offers
+- Personalized communication
+- Retention campaigns
+- Special attention to high-risk customer groups
+
+### Main Business Question
+
+Can customer profile, account, and behavior data help us understand and predict customer churn?
+
+---
+
+## Dataset Overview
+
+The dataset contains 10,000 bank customer records. Each row represents one customer, and each column provides information about that customer’s profile or banking relationship.
+
+### Dataset Features
+
+The dataset includes the following columns:
+
+- `customer_id`
+- `credit_score`
+- `country`
+- `gender`
+- `age`
+- `tenure`
+- `balance`
+- `products_number`
+- `credit_card`
+- `active_member`
+- `estimated_salary`
+- `churn`
+
+### Target Variable
+
+The target column is:
+
+```text
+churn
+```
+
+The churn column tells whether a customer left the bank or stayed.
+
+```text
+1 = Customer left the bank
+0 = Customer stayed with the bank
+```
+
+### Raw Dataset Location
 
 ```text
 data/raw/Bank Customer Churn Prediction.csv
 ```
 
-## 5. Key Questions I Want to Answer
+---
 
-Before building any model, I want to understand the data through business-focused questions. This helps me avoid jumping directly into machine learning without first understanding the customer behavior behind churn.
+## Key Business Questions
 
-The main questions I want to answer are:
+Before building any model, the first goal is to understand the data and customer behavior. The project will answer the following business-focused questions:
 
 - What percentage of customers are leaving the bank?
 - Which customer groups have the highest churn rate?
 - Are inactive customers more likely to leave?
-- Does age, balance, credit score, geography, or salary affect churn?
+- Does age affect customer churn?
+- Does account balance show a relationship with churn?
+- Does credit score influence churn behavior?
+- Does geography or country affect churn rate?
 - Are customers with fewer or more bank products more likely to churn?
-- Which features seem most useful for predicting churn?
+- Does estimated salary have any relationship with churn?
+- Which features appear most useful for predicting churn?
 - What can the bank do to improve customer retention?
 
-These questions will guide the exploratory data analysis, SQL KPI analysis, machine learning model, and final business recommendations.
+These questions will guide the data validation, exploratory data analysis, SQL analysis, machine learning, dashboard, and final business recommendations.
 
-## 6. Tools I Will Use and Why
+---
 
-I want this project to reflect the tools commonly used in real data science and analytics roles. Each tool has a specific purpose in the project workflow.
+## Tools & Technologies
 
-- **Python** will be used for data analysis, data cleaning, feature engineering, and machine learning.
-- **Pandas and NumPy** will help with data manipulation, validation, and numerical analysis.
-- **Matplotlib and Seaborn** will be used to create visualizations and understand patterns in customer churn.
-- **SQL** will be used to write business-style queries, calculate churn KPIs, and analyze customer segments.
-- **Scikit-learn** will be used to build and evaluate machine learning models.
-- **Power BI** will be used to create a dashboard that presents insights in a clear and business-friendly way.
-- **GitHub** will be used to document the full project, track changes, and present the project as a professional portfolio piece.
+This project uses tools that are commonly used in data science, analytics, and business intelligence roles.
 
-## 7. Project Workflow
+| Tool | Purpose |
+|---|---|
+| Python | Data analysis, cleaning, feature engineering, and machine learning |
+| Pandas | Data manipulation and validation |
+| NumPy | Numerical analysis |
+| Matplotlib | Data visualization |
+| Seaborn | Exploratory data visualization |
+| SQL | Business KPI analysis and customer segmentation |
+| Scikit-learn | Machine learning model development and evaluation |
+| Power BI | Business dashboard and visual reporting |
+| GitHub | Project documentation and portfolio presentation |
 
-The project will follow a step-by-step workflow, starting from the raw dataset and ending with business insights and recommendations.
+---
+
+## Project Workflow
+
+The project follows a structured end-to-end data science workflow.
 
 ```text
 Raw Data
@@ -103,11 +171,44 @@ Power BI Dashboard
 Business Insights & Recommendations
 ```
 
-This workflow helps keep the project organized and shows the complete data science process from raw data to business decision-making.
+This workflow helps keep the project organized and shows the complete journey from raw data to business decision-making.
 
-## 8. Data Understanding and Validation Plan
+---
 
-The first technical step will be to understand the raw dataset and check its quality.
+## Repository Structure
+
+```text
+customer-churn-retention-analytics/
+│
+├── data/
+│   ├── raw/
+│   │   └── Bank Customer Churn Prediction.csv
+│   └── processed/
+│
+├── notebooks/
+│   ├── 01_data_understanding_validation.ipynb
+│   ├── 02_exploratory_data_analysis.ipynb
+│   ├── 03_data_cleaning_feature_engineering.ipynb
+│   └── 04_machine_learning_model.ipynb
+│
+├── sql/
+│   └── churn_kpi_analysis.sql
+│
+├── dashboard/
+│   └── powerbi_dashboard.pbix
+│
+├── images/
+│   └── dashboard_preview.png
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 1. Data Understanding & Validation Plan
+
+The first technical step is to understand the raw dataset and check its quality.
 
 In this step, I will check:
 
@@ -120,15 +221,28 @@ In this step, I will check:
 - Basic summary statistics
 - Whether the dataset is ready for analysis
 
-This step is important because a model is only useful if the data is understood and validated first.
+This step is important because a machine learning model is only useful if the data is understood and validated first.
 
-## 9. Exploratory Data Analysis Plan
+### Current Dataset Preview
+
+The dataset includes customer-level information such as credit score, country, gender, age, tenure, account balance, number of products, credit card ownership, active membership status, estimated salary, and churn status.
+
+Example columns:
+
+```text
+customer_id | credit_score | country | gender | age | tenure | balance | products_number | credit_card | active_member | estimated_salary | churn
+```
+
+---
+
+## 2. Exploratory Data Analysis Plan
 
 After validating the dataset, I will explore customer churn patterns.
 
 The EDA will focus on questions such as:
 
 - How many customers churned versus stayed?
+- What is the overall churn rate?
 - Which age groups have higher churn?
 - Does account balance show a relationship with churn?
 - Are inactive members more likely to churn?
@@ -138,23 +252,28 @@ The EDA will focus on questions such as:
 
 The goal of EDA is to move from raw data to meaningful business understanding.
 
-## 10. SQL Business Analysis Plan
+---
 
-I will use SQL to analyze the dataset from a business reporting point of view.
+## 3. SQL Business Analysis Plan
+
+SQL will be used to analyze the dataset from a business reporting point of view.
 
 The SQL analysis will include:
 
 - Overall churn rate
-- Churn rate by geography
+- Churn rate by country
 - Churn rate by gender
 - Churn rate by active membership status
 - Churn rate by number of products
 - Average balance of churned vs retained customers
+- Average credit score of churned vs retained customers
 - Customer segmentation based on churn risk
 
-This step will show how SQL can be used to answer real business questions and calculate KPIs.
+This step shows how SQL can be used to answer real business questions and calculate important KPIs.
 
-## 11. Feature Engineering Plan
+---
+
+## 4. Feature Engineering Plan
 
 After understanding the data, I will create useful features that may help improve churn prediction.
 
@@ -170,7 +289,9 @@ Possible feature engineering ideas include:
 
 Feature engineering is important because good features can help the model better understand customer behavior.
 
-## 12. Machine Learning Plan
+---
+
+## 5. Machine Learning Plan
 
 The machine learning part of the project will focus on predicting whether a customer is likely to churn.
 
@@ -179,15 +300,18 @@ I plan to test models such as:
 - Logistic Regression
 - Decision Tree
 - Random Forest
-- Gradient Boosting or XGBoost, if needed
+- Gradient Boosting
+- XGBoost, if needed
 
-The goal is not only to get a high score, but also to build a model that is understandable and useful for business decision-making.
+The goal is not only to get a high score but also to build a model that is understandable and useful for business decision-making.
 
-## 13. Model Evaluation Plan
+---
 
-I will evaluate the model using both technical and business-focused metrics.
+## 6. Model Evaluation Plan
 
-For the machine learning model, I will look at:
+The model will be evaluated using both technical and business-focused metrics.
+
+### Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -196,9 +320,13 @@ For the machine learning model, I will look at:
 - ROC-AUC
 - Confusion matrix
 
-For this type of project, **recall and F1-score are especially important** because the business wants to correctly identify customers who are likely to churn. Missing too many high-risk customers could mean losing customers the bank had a chance to retain.
+For this type of project, recall and F1-score are especially important because the business wants to correctly identify customers who are likely to churn.
 
-## 14. Power BI Dashboard Plan
+Missing too many high-risk customers could mean losing customers the bank had a chance to retain.
+
+---
+
+## 7. Power BI Dashboard Plan
 
 After the analysis and modeling, I will create a Power BI dashboard to present the insights in a business-friendly way.
 
@@ -207,7 +335,7 @@ The dashboard may include:
 - Total customers
 - Total churned customers
 - Overall churn rate
-- Churn rate by geography
+- Churn rate by country
 - Churn rate by age group
 - Churn rate by active membership
 - Churn rate by product count
@@ -216,11 +344,13 @@ The dashboard may include:
 
 The purpose of the dashboard is to help a business user quickly understand where churn is happening and where action may be needed.
 
-## 15. Expected Deliverables
+---
+
+## Expected Deliverables
 
 By the end of this project, I plan to create:
 
-- A clear project plan
+- Clear project plan
 - Raw dataset folder
 - Data understanding and validation notebook
 - Exploratory data analysis notebook
@@ -230,28 +360,78 @@ By the end of this project, I plan to create:
 - Power BI dashboard
 - Final insights and business recommendations
 
-These deliverables will show the full project journey, from understanding the raw data to creating insights that can support customer retention decisions.
+These deliverables will show the full project journey from understanding raw data to creating insights that can support customer retention decisions.
 
-## 16. Business Value
+---
 
-The final goal of this project is not just to predict churn. The real goal is to help the bank understand customer behavior and make better decisions.
+## Business Value
 
-If the analysis can show which customers are most likely to leave and what factors are connected to churn, the business can use those insights to design better retention strategies. This could include targeted offers, improved customer support, personalized communication, or special attention to high-risk customer groups.
+The final goal of this project is not just to predict churn. The real goal is to help the bank understand customer behavior and make better business decisions.
 
-This project is my way of practicing an end-to-end data science workflow where the technical work connects back to real business value.
+If the analysis can show which customers are most likely to leave and what factors are connected to churn, the business can use those insights to design better retention strategies.
 
-## 17. Final Outcome I Want From This Project
+Possible business actions include:
 
-By completing this project, I want to show that I can think beyond just coding. I want this project to show that I can:
+- Targeted retention offers
+- Improved customer support
+- Personalized communication
+- Special attention to inactive customers
+- Better product recommendations
+- Early identification of high-risk customer groups
+
+This project is designed to connect technical analysis with real business value.
+
+---
+
+## Final Outcome
+
+By completing this project, I want to show that I can think beyond just coding. I want this project to demonstrate that I can:
 
 - Understand a business problem
 - Work with raw data
-- Validate and explore the dataset
-- Use Python and SQL for analysis
-- Build a machine learning model
-- Evaluate the model properly
+- Validate and explore a dataset
+- Use Python for data analysis
+- Use SQL for business KPI analysis
+- Build and evaluate a machine learning model
 - Create a dashboard for business users
 - Communicate insights clearly
 - Connect technical work to real business decisions
 
-This is the kind of end-to-end thinking I want to demonstrate as a data scientist.
+This is the type of end-to-end thinking I want to demonstrate as a future data scientist.
+
+---
+
+## Current Project Status
+
+Currently completed:
+
+- Selected project topic
+- Defined business problem
+- Identified dataset and target variable
+- Loaded the raw dataset
+- Reviewed the first rows of the data
+- Started data understanding and validation
+
+Currently working on:
+
+- Checking dataset shape
+- Checking column names
+- Checking data types
+- Checking missing values
+- Checking duplicate records
+- Understanding churn distribution
+- Reviewing summary statistics
+
+Next step:
+
+```text
+Complete data understanding and validation before moving to exploratory data analysis.
+```
+
+---
+
+## Author
+
+**Amisha Chaudhari**  
+Master’s Student in Data Science  
+Aspiring Data Scientist | Finance Analytics | Machine Learning | Business Intelligence
